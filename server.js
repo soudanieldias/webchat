@@ -1,3 +1,4 @@
+const dotenv = require('dotenv');
 const express = require('express');
 const path  = require('path');
 
@@ -27,4 +28,4 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
