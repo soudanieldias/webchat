@@ -9,7 +9,7 @@
 O aplicativo funciona da seguinte forma:
 
 - Ao enviar uma mensagem, esta permanece armazenada em um Array;
-- 
+
 - Sempre que um novo usuário se conecta a sessão, as mensagens são recuperadas pelo método emit da socket.io
    socket.emit('previousMessages', messages);
    
